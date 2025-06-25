@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Iniciar Sesión</h1>
+    <div class="tab-buttons">
+      <button onclick="mostrarFormulario('natural')" class="active" id="btn-natural">Persona Natural</button>
+      <button onclick="mostrarFormulario('juridica')" id="btn-juridica">Persona Jurídica</button>
+    </div>
+
+    <!-- Formulario Persona Natural -->
+    <form id="form-natural" class="formulario activo">
+      <label for="dni">Email</label>
+      <input type="text" id="dni" name="dni" placeholder="" required>
+      
+      <label for="password-natural">Contraseña</label>
+      <input type="password" id="password-natural" name="password" required>
+
+      <div class="recuperar">
+        <a href="#" onclick="mostrarRecuperar('natural')">¿Olvidé mi contraseña?</a>
+      </div>
+
+      <button type="submit">Ingresar</button>
+    </form>
+
+    <!-- Formulario Persona Jurídica -->
+    <form id="form-juridica" class="formulario">
+      <label for="nit">NIT</label>
+      <input type="text" id="nit" name="nit" placeholder="Ej: 900123456" required>
+      
+      <label for="password-juridica">Contraseña</label>
+      <input type="password" id="password-juridica" name="password" required>
+
+      <div class="recuperar">
+        <a href="#" onclick="mostrarRecuperar('juridica')">¿Olvidé mi contraseña?</a>
+      </div>
+
+      <button type="submit">Ingresar</button>
+    </form>
+
+    <!-- Recuperar contraseña -->
+    <form id="form-recuperar" class="formulario">
+      <h2>Recuperar Contraseña</h2>
+      <p id="tipo-usuario"></p>
+      <label for="correo">Correo electrónico asociado</label>
+      <input type="email" id="correo" name="correo" placeholder="Ej: usuario@correo.com" required>
+      <button type="submit">Enviar enlace de recuperación</button>
+      <div class="recuperar">
+        <a href="#" onclick="volverLogin()">Volver al inicio de sesión</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function mostrarFormulario(tipo) {
+      document.getElementById('form-natural').classList.remove('activo');
+      document.getElementById('form-juridica').classList.remove('activo');
+      document.getElementById('form-recuperar').classList.remove('activo');
+      document.getElementById('btn-natural').classList.remove('active');
+      document.getElementById('btn-juridica').classList.remove('active');
+
+      document.getElementById('form-' + tipo).classList.add('activo');
+      document.getElementById('btn-' + tipo).classList.add('active');
+    }
+
+    function mostrarRecuperar(tipo) {
+      document.getElementById('form-natural').classList.remove('activo');
+      document.getElementById('form-juridica').classList.remove('activo');
+      document.getElementById('form-recuperar').classList.add('activo');
+      document.getElementById('btn-natural').classList.remove('active');
+      document.getElementById('btn-juridica').classList.remove('active');
+      document.getElementById('tipo-usuario').textContent = "Recuperación para persona " + (tipo === 'natural' ? "natural" : "jurídica");
+    }
+
+    function volverLogin() {
+      mostrarFormulario('natural');
+    }
+  </script>
+</body>
+</html>

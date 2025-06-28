@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login & Registro</title>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet" />
+  <link rel="stylesheet" href="login2.css" />
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <div class="relative w-96 bg-white shadow-lg rounded-2xl overflow-hidden">
+    <div id="forms" class="w-[200%] flex transition-transform">
+      
+      <!-- Login Form -->
+      <div class="w-1/2 p-8">
+        <h2 class="text-2xl font-bold mb-4 text-center">Iniciar Sesión</h2>
+        <input type="email" placeholder="Correo" class="w-full mb-3 p-2 border rounded">
+        <input type="password" placeholder="Contraseña" class="w-full mb-3 p-2 border rounded">
+        <button class="bg-blue-500 text-white w-full py-2 rounded">Entrar</button>
+        <p class="text-sm mt-4 text-center">
+          ¿No tienes cuenta?
+          <button onclick="toggleForm()" class="text-blue-500 underline">Regístrate</button>
+        </p>
+      </div>
+
+      <!-- Registro Form -->
+      <div class="w-1/2 p-8">
+        <h2 class="text-2xl font-bold mb-4 text-center">Registro</h2>
+        <input type="text" placeholder="Nombre" class="w-full mb-3 p-2 border rounded">
+        <input type="email" placeholder="Correo" class="w-full mb-3 p-2 border rounded">
+        <input type="password" placeholder="Contraseña" class="w-full mb-3 p-2 border rounded">
+        <button class="bg-green-500 text-white w-full py-2 rounded">Crear cuenta</button>
+        <p class="text-sm mt-4 text-center">
+          ¿Ya tienes cuenta?
+          <button onclick="toggleForm()" class="text-green-500 underline">Inicia sesión</button>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="login2.js"></script>
+</body>
+</html>

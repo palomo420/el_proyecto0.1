@@ -1,3 +1,12 @@
+function toggleMode() {
+  const body = document.body;
+  const isDark = body.classList.contains("dark");
+  body.classList.toggle("dark");
+  body.classList.toggle("light");
+
+  const button = document.querySelector(".toggle-btn");
+  button.textContent = isDark ? "Modo Oscuro" : "Modo Claro";
+}
 // Mobile menu toggle
 document.getElementById('mobile-menu-button').addEventListener('click', function() {
     document.getElementById('mobile-menu').classList.toggle('hidden');

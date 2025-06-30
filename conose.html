@@ -9,24 +9,63 @@
 <body>
   <button class="modo-toggle" onclick="toggleModo()">🌓 Cambiar modo</button>
 
-  <section class="conocenos">
-    <div class="intro">
-      <h2>Conócenos</h2>
-      <p>
-        Somos una empresa comprometida con la excelencia. Nuestro equipo está formado por 
-        profesionales apasionados que trabajan juntos para crear soluciones de alto impacto.
-      </p>
+ <section class="nuestra-historia">
+  <div class="historia-imagen">
+    <img src="tu-imagen.jpg" alt="Nuestra historia" />
+  </div>
+
+  <div class="historia-contenido">
+    <h2>Nuestra historia</h2>
+    <hr />
+    <p>
+      En Essencia, creemos que cada persona merece encontrar su firma aromática, esa fragancia 
+      que los define y acompaña en cada momento especial.
+    </p>
+    <p>
+      Desde 2010, hemos seleccionado las más exquisitas esencias de las principales casas perfumistas del mundo,
+      ofreciendo a nuestros clientes una experiencia de compra personalizada y una atención al detalle que nos distingue.
+    </p>
+
+    <div class="destacados">
+      <span>+10 años de experiencia</span>
+      <span>+500 fragancias exclusivas</span>
+      <span>Clientes en 15 países</span>
+      <span>Asesoramiento experto</span>
     </div>
 
-    <div class="mision-vision">
-      <div class="bloque">
-        <h3>Misión</h3>
-        <p>
-          Brindar soluciones tecnológicas innovadoras que mejoren la vida de nuestros clientes, 
-          con un enfoque humano, ético y sustentable.
-        </p>
-      </div>
-      <div class="bloque">
-        <h3>Visión</h3>
-        <p>
-          Ser una empres
+    <button class="btn">Conoce más</button>
+  </div>
+</section>
+
+<section class="nuestro-equipo">
+  <h3>Nuestro equipo</h3>
+  <div class="equipo-grid">
+    <div class="card-equipo">
+      <img src="https://via.placeholder.com/150" alt="Persona 1" />
+      <h4>María López</h4>
+      <p>CEO & Fundadora</p>
+    </div>
+    <div class="card-equipo">
+      <img src="https://via.placeholder.com/150" alt="Persona 2" />
+      <h4>Carlos Pérez</h4>
+      <p>Desarrollador Frontend</p>
+    </div>
+    <div class="card-equipo">
+      <img src="https://via.placeholder.com/150" alt="Persona 3" />
+      <h4>Lucía Fernández</h4>
+      <p>Diseñadora UX/UI</p>
+    </div>
+  </div>
+</section>
+
+<section>
+   
+</section>
+
+  <script>
+    function toggleModo() {
+      document.body.classList.toggle('modo-oscuro');
+    }
+  </script>
+</body>
+</html>

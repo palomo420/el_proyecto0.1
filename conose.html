@@ -1,71 +1,285 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Conócenos</title>
-  <link rel="stylesheet" href="conose.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conócenos - Ofertas y Servicios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="conose.html">
 </head>
-<body>
-  <button class="modo-toggle" onclick="toggleModo()">🌓 Cambiar modo</button>
+<body class="font-sans bg-gray-50">
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-indigo-600 bg-indigo-100 rounded-full mb-4">QUIÉNES SOMOS</span>
+                <h2 class="text-4xl font-bold text-gray-900 sm:text-5xl">Conoce nuestra historia</h2>
+                <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                    Más de una década ofreciendo las mejores ofertas y servicios con calidad y compromiso.
+                </p>
+            </div>
 
- <section class="nuestra-historia">
-  <div class="historia-imagen">
-    <img src="tu-imagen.jpg" alt="Nuestra historia" />
-  </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                alt="Equipo de trabajo" 
+                                class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-indigo-900 opacity-20"></div>
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-lg w-64 hover-scale hidden lg:block">
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-trophy text-indigo-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-900">+15,000</p>
+                                <p class="text-sm text-gray-600">Clientes satisfechos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="historia-contenido">
-    <h2>Nuestra historia</h2>
-    <hr />
-    <p>
-      En Essencia, creemos que cada persona merece encontrar su firma aromática, esa fragancia 
-      que los define y acompaña en cada momento especial.
-    </p>
-    <p>
-      Desde 2010, hemos seleccionado las más exquisitas esencias de las principales casas perfumistas del mundo,
-      ofreciendo a nuestros clientes una experiencia de compra personalizada y una atención al detalle que nos distingue.
-    </p>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Nuestra misión es ofrecerte lo mejor</h3>
+                    <p class="text-gray-600 mb-8">
+                        Desde nuestro inicio en 2010, nos hemos dedicado a conectar a las personas con las mejores ofertas y servicios del mercado. 
+                        Nuestro equipo de expertos trabaja incansablemente para garantizar que cada cliente encuentre exactamente lo que necesita.
+                    </p>
 
-    <div class="destacados">
-      <span>+10 años de experiencia</span>
-      <span>+500 fragancias exclusivas</span>
-      <span>Clientes en 15 países</span>
-      <span>Asesoramiento experto</span>
-    </div>
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 text-indigo-600">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">Ofertas exclusivas</h4>
+                                <p class="mt-1 text-gray-600">
+                                    Acceso a descuentos y promociones que no encontrarás en otro lugar.
+                                </p>
+                            </div>
+                        </div>
 
-    <button class="btn">Conoce más</button>
-  </div>
-</section>
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 text-indigo-600">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">Garantía de calidad</h4>
+                                <p class="mt-1 text-gray-600">
+                                    Todos nuestros servicios pasan por un riguroso proceso de verificación.
+                                </p>
+                            </div>
+                        </div>
 
-<section class="nuestro-equipo">
-  <h3>Nuestro equipo</h3>
-  <div class="equipo-grid">
-    <div class="card-equipo">
-      <img src="https://via.placeholder.com/150" alt="Persona 1" />
-      <h4>María López</h4>
-      <p>CEO & Fundadora</p>
-    </div>
-    <div class="card-equipo">
-      <img src="https://via.placeholder.com/150" alt="Persona 2" />
-      <h4>Carlos Pérez</h4>
-      <p>Desarrollador Frontend</p>
-    </div>
-    <div class="card-equipo">
-      <img src="https://via.placeholder.com/150" alt="Persona 3" />
-      <h4>Lucía Fernández</h4>
-      <p>Diseñadora UX/UI</p>
-    </div>
-  </div>
-</section>
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 text-indigo-600">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-gray-900">Soporte 24/7</h4>
+                                <p class="mt-1 text-gray-600">
+                                    Nuestro equipo de atención al cliente está disponible para ayudarte en cualquier momento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-<section>
-   
-</section>
+                    <div class="mt-10">
+                        <a href="#contacto" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white gradient-bg shadow-lg hover:shadow-xl transition-all duration-300">
+                            Contáctanos
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-  <script>
-    function toggleModo() {
-      document.body.classList.toggle('modo-oscuro');
-    }
-  </script>
+            <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-md hover-scale">
+                    <p class="text-4xl font-bold text-indigo-600">10+</p>
+                    <p class="mt-2 text-gray-600">Años de experiencia</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover-scale">
+                    <p class="text-4xl font-bold text-indigo-600">500+</p>
+                    <p class="mt-2 text-gray-600">Servicios disponibles</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover-scale">
+                    <p class="text-4xl font-bold text-indigo-600">98%</p>
+                    <p class="mt-2 text-gray-600">Clientes satisfechos</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover-scale">
+                    <p class="text-4xl font-bold text-indigo-600">24/7</p>
+                    <p class="mt-2 text-gray-600">Disponibilidad</p>
+                </div>
+            </div>
+
+            <div class="mt-24">
+                <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">Lo que dicen nuestros clientes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md hover-scale">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente">
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-900">María González</p>
+                                <div class="flex text-yellow-400 mt-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Encontré las mejores ofertas para mis vacaciones familiares. El servicio fue impecable y ahorré más del 30%."
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-md hover-scale">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/men/54.jpg" alt="Cliente">
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-900">Carlos Martínez</p>
+                                <div class="flex text-yellow-400 mt-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Como pequeño empresario, sus servicios me han ayudado a reducir costos significativamente. ¡Altamente recomendados!"
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-md hover-scale">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0">
+                                <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente">
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-900">Laura Fernández</p>
+                                <div class="flex text-yellow-400 mt-1">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "La atención personalizada y las ofertas exclusivas hacen que siempre vuelva. Nunca me han fallado."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold sm:text-5xl">Conoce a nuestro equipo</h2>
+                <p class="mt-4 text-xl opacity-90 max-w-3xl mx-auto">
+                    Profesionales apasionados trabajando para ofrecerte la mejor experiencia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 text-center hover-scale">
+                    <div class="mx-auto h-40 w-40 rounded-full overflow-hidden border-4 border-white border-opacity-20 mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Equipo" class="h-full w-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold">Ana Rodríguez</h3>
+                    <p class="text-indigo-200 mb-4">CEO & Fundadora</p>
+                    <p class="text-white text-opacity-80">
+                        Con más de 15 años en el sector, Ana lidera nuestra visión de ofrecer servicios excepcionales.
+                    </p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-white hover:text-indigo-200"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 text-center hover-scale">
+                    <div class="mx-auto h-40 w-40 rounded-full overflow-hidden border-4 border-white border-opacity-20 mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Equipo" class="h-full w-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold">Javier López</h3>
+                    <p class="text-indigo-200 mb-4">Director de Operaciones</p>
+                    <p class="text-white text-opacity-80">
+                        Experto en logística y procesos, garantiza que cada servicio cumpla con nuestros altos estándares.
+                    </p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-white hover:text-indigo-200"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 text-center hover-scale">
+                    <div class="mx-auto h-40 w-40 rounded-full overflow-hidden border-4 border-white border-opacity-20 mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Equipo" class="h-full w-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold">Sofía Martínez</h3>
+                    <p class="text-indigo-200 mb-4">Directora de Marketing</p>
+                    <p class="text-white text-opacity-80">
+                        Creativa e innovadora, lleva nuestras ofertas a más personas cada día.
+                    </p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-white hover:text-indigo-200"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 text-center hover-scale">
+                    <div class="mx-auto h-40 w-40 rounded-full overflow-hidden border-4 border-white border-opacity-20 mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Equipo" class="h-full w-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold">David García</h3>
+                    <p class="text-indigo-200 mb-4">Director de Tecnología</p>
+                    <p class="text-white text-opacity-80">
+                        Desarrolla las plataformas que hacen posible encontrar las mejores ofertas de manera sencilla.
+                    </p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="#" class="text-white hover:text-indigo-200"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white hover:text-indigo-200"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-indigo-50 rounded-2xl p-8 md:p-12 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">¿Listo para disfrutar de nuestras ofertas?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Regístrate ahora y obtén acceso exclusivo a descuentos y promociones especiales.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Tu correo electrónico" class="px-4 py-3 w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <button class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors">
+                        Suscribirse
+                    </button>
+                </div>
+                <p class="mt-4 text-sm text-gray-500">
+                    Nosotros también odiamos el spam. Nunca compartiremos tu información.
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

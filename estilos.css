@@ -41,7 +41,13 @@ body.light .toggle-btn {
     scroll-behavior: smooth;
 }
 .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
     transition: all 0.3s ease;
+    margin: 0; 
+    padding: 1.5rem; 
 }
 .testimonial-card:hover {
     transform: scale(1.03);

@@ -420,43 +420,71 @@
 <!-- fin -->
 
  <!-- emprezas -->
-    <section id="empresas" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-800">Empresas destacadas</h2>
-            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Colaboramos con las empresas más innovadoras del mercado</p>
-        </div>
+    <!-- emprezas -->
+<section id="empresas" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold text-gray-800">Empresas destacadas</h2>
+    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+      Colaboramos con las empresas más innovadoras del mercado
+    </p>
+  </div>
 
-        <div class="relative">
-            <div class="company-carousel overflow-x-auto py-4 flex gap-8 scrollbar-hide" id="company-carousel">
-                <div class="flex-shrink-0 bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
-                    <img src="img/icono deunn restaurante.png" alt="Google" class="h-12 object-contain">
-                </div>
-                <div class="flex-shrink-0 bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
-                    <img src="img/limpieza.png" alt="Amazon" class="h-12 object-contain">
-                </div>
-                <div class="flex-shrink-0 bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
-                    <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" class="h-12 object-contain">
-                </div>
-                <div class="flex-shrink-0 bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
-                    <img src="https://logo.clearbit.com/apple.com" alt="Apple" class="h-12 object-contain">
-                </div>
-                <div class="flex-shrink-0 bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
-                    <img src="https://logo.clearbit.com/facebook.com" alt="Facebook" class="h-12 object-contain">
-                </div>
-                <div class="flex-shrink-0 bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
-                    <img src="https://logo.clearbit.com/twitter.com" alt="Twitter" class="h-12 object-contain">
-                </div>
-                <div class="flex-shrink-0 bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
-                    <img src="https://logo.clearbit.com/linkedin.com" alt="LinkedIn" class="h-12 object-contain">
-                </div>
-            </div>
-            <button id="prev-company" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition duration-300 hidden md:block">
-                <i class="fas fa-chevron-left text-gray-600"></i>
-            </button>
-            <button id="next-company" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition duration-300 hidden md:block">
-                <i class="fas fa-chevron-right text-gray-600"></i>
-            </button>
+  <div class="relative overflow-hidden">
+    <!-- Contenedor de slides -->
+    <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
+      <!-- Slide 1 -->
+      <div class="flex-shrink-0 w-full flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
+          <img src="img/icono deunn restaurante.png" alt="Restaurante" class="h-12 object-contain">
         </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="flex-shrink-0 w-full flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
+          <img src="img/limpieza.png" alt="Limpieza" class="h-12 object-contain">
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="flex-shrink-0 w-full flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
+          <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" class="h-12 object-contain">
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="flex-shrink-0 w-full flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
+          <img src="https://logo.clearbit.com/apple.com" alt="Apple" class="h-12 object-contain">
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="flex-shrink-0 w-full flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
+          <img src="https://logo.clearbit.com/facebook.com" alt="Facebook" class="h-12 object-contain">
+        </div>
+      </div>
+      <!-- Slide 6 -->
+      <div class="flex-shrink-0 w-full flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
+          <img src="https://logo.clearbit.com/twitter.com" alt="Twitter" class="h-12 object-contain">
+        </div>
+      </div>
+      <!-- Slide 7 -->
+      <div class="flex-shrink-0 w-full flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center w-48 h-24">
+          <img src="https://logo.clearbit.com/linkedin.com" alt="LinkedIn" class="h-12 object-contain">
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <button id="prev-company" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition">
+      <i class="fas fa-chevron-left text-gray-600"></i>
+    </button>
+    <button id="next-company" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 transition">
+      <i class="fas fa-chevron-right text-gray-600"></i>
+    </button>
+  </div>
+</section>
         <!-- fin -->
          
         <!-- testimonios -->

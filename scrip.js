@@ -88,3 +88,27 @@ document.addEventListener('DOMContentLoaded', () => {
   function cerrarModal(id) {
     document.getElementById(id).classList.add('hidden');
   }
+  const track = document.getElementById("carousel-track");
+  const slides = track.children;
+  const totalSlides = slides.length;
+  let index = 0;
+
+  const updateCarousel = () => {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  document.getElementById("next-company").addEventListener("click", () => {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  });
+
+  document.getElementById("prev-company").addEventListener("click", () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  });
+
+  // autoplay cada 4 segundos
+  setInterval(() => {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  }, 4000);

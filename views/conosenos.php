@@ -1,0 +1,122 @@
+ <section class="conocenos-container">
+        <div class="section-title">
+            <h2>Conócenos</h2>
+        </div>
+        
+        <div class="nuestra-historia">
+            <div class="historia-content">
+                <h3>Nuestra Historia</h3>
+                <p>Fundada en 2010, nuestra empresa nació con la visión de revolucionar el sector a través de la innovación y la calidad. Lo que comenzó como un pequeño equipo de apasionados ahora es una organización reconocida a nivel nacional.</p>
+                <p>A lo largo de los años, hemos crecido y evolucionado, pero nuestros valores fundamentales siguen intactos: compromiso con la excelencia, atención al cliente y pasión por lo que hacemos.</p>
+                <p>Hoy, seguimos escribiendo nuestra historia con cada proyecto, cada cliente y cada nuevo desafío que superamos.</p>
+            </div>
+            <div class="historia-imagen">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80" alt="Nuestra historia">
+            </div>
+        </div>
+        
+        <div class="mision-vision">
+            <div class="card">
+                <h3><i>🎯</i> Misión</h3>
+                <p>Proporcionar soluciones innovadoras y de alta calidad que superen las expectativas de nuestros clientes, contribuyendo positivamente a su éxito y al desarrollo de nuestra comunidad.</p>
+            </div>
+            <div class="card">
+                <h3><i>👁️</i> Visión</h3>
+                <p>Ser reconocidos como líderes en nuestro sector, destacando por nuestra innovación, compromiso social y excelencia en el servicio, expandiendo nuestra presencia a nivel internacional.</p>
+            </div>
+        </div>
+        
+        <div class="nuestro-equipo">
+            <div class="section-title">
+                <h2>Nuestro Equipo</h2>
+            </div>
+            <div class="equipo-grid">
+                <div class="miembro">
+                    <div class="miembro-img">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80" alt="Miembro del equipo">
+                    </div>
+                    <div class="miembro-info">
+                        <h4>Ana Rodríguez</h4>
+                        <p>CEO & Fundadora</p>
+                        <div class="social">
+                            <a href="#"><i>📱</i></a>
+                            <a href="#"><i>💼</i></a>
+                            <a href="#"><i>📧</i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="miembro">
+                    <div class="miembro-img">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80" alt="Miembro del equipo">
+                    </div>
+                    <div class="miembro-info">
+                        <h4>Carlos Méndez</h4>
+                        <p>Director de Marketing</p>
+                        <div class="social">
+                            <a href="#"><i>📱</i></a>
+                            <a href="#"><i>💼</i></a>
+                            <a href="#"><i>📧</i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="miembro">
+                    <div class="miembro-img">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80" alt="Miembro del equipo">
+                    </div>
+                    <div class="miembro-info">
+                        <h4>Laura Fernández</h4>
+                        <p>Directora de Diseño</p>
+                        <div class="social">
+                            <a href="#"><i>📱</i></a>
+                            <a href="#"><i>💼</i></a>
+                            <a href="#"><i>📧</i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="miembro">
+                    <div class="miembro-img">
+                        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80" alt="Miembro del equipo">
+                    </div>
+                    <div class="miembro-info">
+                        <h4>Javier López</h4>
+                        <p>Desarrollador Senior</p>
+                        <div class="social">
+                            <a href="#"><i>📱</i></a>
+                            <a href="#"><i>💼</i></a>
+                            <a href="#"><i>📧</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nuestros-valores">
+            <div class="section-title">
+                <h2>Nuestros Valores</h2>
+            </div>
+            <div class="valores-grid">
+                <div class="valor">
+                    <div class="valor-icono">💡</div>
+                    <h4>Innovación</h4>
+                    <p>Buscamos constantemente nuevas formas de mejorar y avanzar en todo lo que hacemos.</p>
+                </div>
+                
+                <div class="valor">
+                    <div class="valor-icono">🤝</div>
+                    <h4>Integridad</h4>
+                    <p>Actuamos con honestidad y transparencia en todas nuestras relaciones y operaciones.</p>
+                </div>
+                
+                <div class="valor">
+                    <div class="valor-icono">🌱</div>
+                    <h4>Sostenibilidad</h4>
+                    <p>Nos comprometemos con prácticas responsables con el medio ambiente y la sociedad.</p>
+                </div>
+                
+                <div class="valor">
+                    <div class="valor-icono">⭐</div>
+                    <h4>Excelencia</h4>
+                    <p>Nos esforzamos por superar expectativas en cada proyecto que emprendemos.</p>

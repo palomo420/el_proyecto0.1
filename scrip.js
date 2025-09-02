@@ -112,10 +112,3 @@ document.addEventListener('DOMContentLoaded', () => {
     index = (index + 1) % totalSlides;
     updateCarousel();
   }, 4000);
-
-  const mobileMenuButton = document.getElementById('mobile-menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
